@@ -10,7 +10,7 @@
 
 Este proyecto consiste en una base de datos para gestionar información sobre libros en una biblioteca. La base de datos se llama "biblioteca" y está compuesta por dos tablas principales: "libro" y "genero".
 
-# Relacion:
+# Relación:
 
 Relación de 1 a N: La relación principal es entre la tabla "genero" y la tabla "libro", donde un género puede tener múltiples libros asociados, pero cada libro pertenece a un solo género.
 
