@@ -1,0 +1,22 @@
+<?php
+require_once './templates/header.phtml';
+?>
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Libros del género: <?= $result['genero']->genero; ?></h1>
+    <div class="row">
+        <?php foreach ($result['libros'] as $book): ?>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+
+                    <img src="<?= $book->imagen_url; ?>" class="card-img-top img-fluid" alt="Imagen de <?= $book->titulo; ?>">
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $book->titulo; ?></h5>
+                        <p class="card-text"><strong>Sinopsis:</strong> <?= $book->sinopsis; ?></p>
+                        <p class="card-text"><strong>Autor:</strong> <?= $book->autor; ?></p>
+                        <p class="card-text"><strong>Fecha de Publicación:</strong> <?= $book->anio_publicacion; ?></p>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<?php
+require_once './templates/header.phtml';
+?>
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Lista de Géneros</h1>
+    <div class="row">
+        <?php foreach ($genres as $genre): ?>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $genre->genero ?></h5>
+                        <p class="card-text"><strong>Descripción:</strong> <?= $genre->descripcion ?></p>
+                        <p class="card-text"><strong>Géneros Relacionados:</strong> <?= $genre->generos_relacionados ?></p>
+                        <p class="card-text"><strong>Nivel de Popularidad:</strong> <?= $genre->nivel_popularidad ?></p>
+                        <a href="booksByGenre/<?= $genre->id_genero ?>" class="btn btn-primary">Ver libros</a>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>
