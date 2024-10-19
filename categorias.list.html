@@ -1,0 +1,8 @@
+<h1>Categorías</h1>
+<ul>
+    <?php foreach ($categorias as $categoria): ?>
+        <li>
+            <a href="/categoria/<?= $categoria['id'] ?>"><?= $categoria['nombre'] ?></a>
+        </li>
+    <?php endforeach; ?>
+</ul>
