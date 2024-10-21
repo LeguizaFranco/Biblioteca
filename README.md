@@ -14,7 +14,7 @@ El propósito principal es crear una página web donde los usuarios puedan busca
 
 ## Diagrama de la Base de Datos
 
-![Diagrama ER](https://github.com/user-attachments/assets/29f24e98-591a-4014-b34c-d155008d3483)
+![Diagrama ER](DER.png)
 
 ## Despliegue del Sitio
 
