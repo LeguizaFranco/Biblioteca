@@ -1,1 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    min-height: 800;
+    min-width: 800px;
+    /* Ajusta este valor según el tamaño del header y footer */
+}
+
+footer {
+    position: fixed; /* O puedes usar fixed si quieres que el footer siempre esté visible */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 

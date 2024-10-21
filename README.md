@@ -1,28 +1,45 @@
-# Biblioteca de libros
+# Biblioteca de Libros
 
-# Integrantes, Grupo Nº 98:
+**Integrantes, Grupo Nº 98:**
+- GIL, MARIA AGUSTINA (43658954)
+- LEGUIZA, FRANCO (44928045)
 
-• GIL, MARIA AGUSTINA (43658954)
+## Descripción
 
-• LEGUIZA, FRANCO (44928045)
+Este proyecto consiste en una base de datos para gestionar información sobre libros en una biblioteca. La base de datos, llamada "biblioteca", incluye dos tablas principales: **libro** y **genero**. Un género puede tener múltiples libros asociados (relación 1 a N).
 
-# Descripción:
+## Objetivo
 
-Este proyecto consiste en una base de datos para gestionar información sobre libros en una biblioteca. La base de datos se llama "biblioteca" y está compuesta por dos tablas principales: "libro" y "genero".
+El propósito principal es crear una página web donde los usuarios puedan buscar y filtrar libros por género, similar al funcionamiento de una plataforma de streaming.
 
-# Relación:
+## Diagrama de la Base de Datos
 
-Relación de 1 a N: La relación principal es entre la tabla "genero" y la tabla "libro", donde un género puede tener múltiples libros asociados, pero cada libro pertenece a un solo género.
+![Diagrama ER](https://github.com/user-attachments/assets/29f24e98-591a-4014-b34c-d155008d3483)
 
+## Despliegue del Sitio
 
-# Objetivo:
+### Requisitos
+- **Apache**
+- **MySQL**
+- **Git**
 
-La idea principal es desarrollar una página web que permita a los usuarios buscar y filtrar libros por género, similar a cómo funciona una plataforma de streaming.
+### Instrucciones
 
+1. **Clonar el Repositorio en `htdocs` con Git Bash:**
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+   ```
 
-# Diagrama de la Base de Datos
+2. **Iniciar Apache y MySQL.**
 
-![DER](https://github.com/user-attachments/assets/29f24e98-591a-4014-b34c-d155008d3483)
+3. **Exportar la Base de Datos:**
+   - Asegúrate de crear y configurar la base de datos "biblioteca" en MySQL.
 
+4. **Acceder al sitio en el navegador:**
+   ```
+   http://localhost/web2-trabajo-especial/
+   ```
 
-
+5. **Para pruebas de funcionalidades (Administrador):**
+   - **Email:** `webadmin@unicen.tudai`
+   - **Contraseña:** `admin`
