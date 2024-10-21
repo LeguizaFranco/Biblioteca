@@ -1,9 +1,0 @@
-<h1>Listado de Ítems</h1>
-<ul>
-    <?php foreach ($items as $item): ?>
-        <li>
-            <a href="/item/<?= $item['id'] ?>"><?= $item['nombre'] ?></a>
-            <p>Categoría: <?= $item['categoria'] ?></p>
-        </li>
-    <?php endforeach; ?>
-</ul>
